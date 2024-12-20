@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatis11.dao.ChatDao">
+	<insert id="saveChat">
+		insert into chat(chat_id, invitation, chat_type, chat_detail, chat_image, chat_time, user_mail) 
+			values (#{chatId}, #{invitation}, #{chatType}, #{chatDetail}, #{chatImage}, #{chatTime}, #{userMail});
+	</insert> 
+</mapper>
